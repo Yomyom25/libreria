@@ -1,0 +1,140 @@
+:root {
+    --color1: #ccc;
+    --colorWhite: #ffff;
+    --colorBlack: #202131;
+    --color2: #7c2020;
+    --color3: #f2f4f6;
+    --color4: #f7831e;
+    --color5: #ffcc00;
+    --color6: #098839;
+}
+
+body {
+    font-weight: 16px;
+    line-height: 24px;
+    background-color: var(--colorWhite);
+}
+
+.yellow {
+    color: var(--color5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-1200px {
+    width: 1200px;
+    margin: auto;
+}
+.img-logo {
+    margin: auto;
+    text-align: center;
+    margin: 20px;
+}
+.logo {
+    width: 150px;
+}
+
+.background_login {
+    background-color: var(--color3) ;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+.error {
+    color: #fefbfb;
+    background-color: #d6d1d186;
+    margin: 10px;
+
+}
+.background_login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-login {
+    padding: 10px 20px;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-color: var(--color3);
+    border: 1px solid var(--color1);
+    display: block;
+}
+
+.btn-login {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--color2);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.ancho-uniforme {
+    width: 480px;
+}
+
+hr {
+    width: 480px;
+    margin: 20px auto;
+    border: 1px solid #cac4c4;
+}
+
+
+
+.btn:hover {
+    background-color: var(--colorBlack);
+}
+
+.btn-cuenta {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--color4);
+    color: white;
+    width: 280px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.footer {
+    color: var(--color2);
+    font-weight: bold;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.footer a {
+    color: var(--color2);
+    text-decoration: none;
+}
+
+.text-small {
+    font-size: 10px;
+    margin-top: 40px;
+    margin: 20px 0px;
+}
+
+
+.entrada-label {
+    margin-left: 180px;
+}
+
+
+.img-principal {
+    margin: auto;
+    text-align: center;
+}

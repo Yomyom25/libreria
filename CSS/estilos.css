@@ -1,0 +1,237 @@
+:root {
+    --color1: #ccc;
+    --colorWhite: #ffff;
+    --colorBlack: #202131;
+    --color2: #7c2020;
+    --color3: #f2f4f6;
+    --color4: #f7831e;
+    --color5: #ffcc00;
+    --color6: #098839;
+}
+
+
+body {
+    font-weight: 16px;
+    line-height: 24px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-1200px {
+    width:1200px;
+    max-width: 100%;
+    border: 1px solid blue;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 250px;
+    background: var(--colorWhite);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    max-width: 100px;
+    margin: auto;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.font1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.title-div {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    display: block;
+    margin-top: 20px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    background: #e4e4e4;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background: #ccc;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logout {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--colorWhite);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.dashboard img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* USUARIOS */
+
+.tabla-usuarios {
+    width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--colorWhite);
+
+}
+
+.tabla-usuarios table {
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.tabla-usuarios th,  td {
+    padding: 10px 15px;
+    border: 1px solid var(--colorBlack);
+    text-align: center;
+}
+
+.tabla-usuarios th {
+    border-spacing: 5px;
+    background-color: var(--colorBlack);
+    color: var(--color3);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.add-user {
+    text-align: left;
+    background-color: var(--color2);
+    color: var(--colorWhite);
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.img-tabla {
+    width: 30px;
+    text-align: center;
+}
+
+.btn-green {
+    background-color: var(--color6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: var(--color2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+    margin: 20px;
+    text-align: left;
+    align-items:end;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* FORMULARIO */
+.btn-cuenta {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--color4);
+    color: white;
+    width: 280px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+.input-login {
+    padding: 10px 20px;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-color: var(--color3);
+    border: 1px solid var(--color1);
+    display: block;
+}
+
+.correo {
+    background-color: var(--color1);
+    color: grey;
+}
+
+.ancho-uniforme {
+    width: 480px;
+}
+
+.btn-main:hover {
+    background-color: var(--colorBlack);
+}
