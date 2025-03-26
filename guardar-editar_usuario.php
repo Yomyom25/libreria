@@ -18,7 +18,7 @@ $query = mysqli_query($conectar, $actualizar);
 if($query){
     echo '<script>
     alert("Usuario actualizado correctamente!");
-    location.href = "usuario.php?id='. $id.'"
+    location.href = "usuarios.php?id='. $id.'"
     </script>';
 } else {
     echo '<script>

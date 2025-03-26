@@ -30,7 +30,7 @@ include "seguridad.php";
                 </div>
 
                 <div class="btn">
-                    <a class="btn-green" href="usuario.php">Regresar</a>
+                    <a class="btn-green" href="usuarios.php">Regresar</a>
                 </div>
 
                 <div class="form-container">

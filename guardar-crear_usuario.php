@@ -33,7 +33,7 @@ $query = mysqli_query($conectar, $insertar);
 if ($query) {
     echo '<script>
     alert("Registro exitoso!");
-    location.href = "usuario.php"
+    location.href = "usuarios.php"
     </script>';
 } else {
     echo '<script>
