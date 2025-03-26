@@ -29,7 +29,7 @@ include "seguridad.php";
                 <div class="tittle-div">
                     <h1 class="title">Panel Administrativo</h1>
                 </div>
-                <img src="img/home.jpg" alt="Panel Administrativo">
+                <img src="img/logo.jpg" alt="Panel Administrativo">
             </section>
 
         </div>

@@ -5,7 +5,7 @@ if ($_SESSION ["autentificado"] != "SI") {
     }  else {
 
 $nombre_cookie = "tiempo_inicio";
-$tiempo_expiracion = 10;
+$tiempo_expiracion = 1000;
 
 setcookie($nombre_cookie, time(), time() + $tiempo_expiracion, "/");
 function verificarTiempoCookie ($nombre_cookie, $tiempo_expiracion)
@@ -20,9 +20,6 @@ function verificarTiempoCookie ($nombre_cookie, $tiempo_expiracion)
             //REDIRECCIONAR A LOGIN
             header("Location: index.php");
             exit();
-        } else {
-            echo "la cookie valida . <br>";
-
         }
     } else {
         session_unset();
