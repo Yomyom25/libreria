@@ -1,9 +1,4 @@
 <?php 
-session_start();
-if ($_SESSION ["autentificado"] != "SI") {
-    header ("Location: index.php");
-    }  else {
-
 $nombre_cookie = "tiempo_inicio";
 $tiempo_expiracion = 10;
 
@@ -34,6 +29,3 @@ function verificarTiempoCookie ($nombre_cookie, $tiempo_expiracion)
 }
 
 verificarTiempoCookie($nombre_cookie, $tiempo_expiracion);
-
-}
-?>

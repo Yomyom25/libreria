@@ -2,11 +2,11 @@
     --color1: #ccc;
     --colorWhite: #ffff;
     --colorBlack: #202131;
-    --color2: #4A3259;
+    --color2: #7c2020;
     --color3: #f2f4f6;
-    --color4: #D9526B;
-    --color5: #F2EDD0;
-    --color6: #5F8286;
+    --color4: #f7831e;
+    --color5: #ffcc00;
+    --color6: #098839;
 }
 
 
@@ -43,7 +43,7 @@ body {
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 100px;
     margin: auto;
     align-items: center;
 }
@@ -57,7 +57,6 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-    color: var(--color4);
 }
 
 .title-div {

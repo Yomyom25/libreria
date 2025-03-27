@@ -63,7 +63,6 @@ include "seguridad.php";
 
                         <input type="hidden" name="id" value="<?php echo $fila["ID"]; ?>">
                         <input type="hidden" name="email" value="<?php echo $fila["email"]; ?>">
-                        <input type="hidden" name="contrasena" value="<?php echo $fila["contrasena"]; ?>">
                         <button class="btn-cuenta ancho-uniforme entrada-label" type="submit" value=>Actualizar</button>
                     </form>
                 </div>
