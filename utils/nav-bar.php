@@ -9,7 +9,7 @@
                     <ul>
                         <li><a href="autores.php">Autores</a></li>
                         <li><a href="carreras.php">Carreras</a></li>
-                        <li><a href="#">Libros</a></li>
+                        <li><a href="libros.php">Libros</a></li>
                         <li><a href="usuarios.php">Usuarios</a></li>
                     </ul>
                 </nav>

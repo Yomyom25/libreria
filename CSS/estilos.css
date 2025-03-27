@@ -99,7 +99,7 @@ body {
 .header-content {
     display: flex;
     align-items: center;
-    background: #fff;
+    background: #F2EDD0;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
