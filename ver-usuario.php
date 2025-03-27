@@ -31,7 +31,7 @@ include "seguridad.php";
 
                 <div class="usuarios-vista">
                     <div class="btn">
-                        <a class="btn-green btn-main" href="usuario.php">Regresar</a>
+                        <a class="btn-green btn-main" href="usuarios.php">Regresar</a>
                     </div>
 
                         <div class="vista">

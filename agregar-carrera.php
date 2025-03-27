@@ -1,6 +1,5 @@
 <?php 
 include "seguridad.php";
-
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +16,6 @@ include "seguridad.php";
             <?php 
             include "utils/nav-bar.php"
             ?>
-
         </div>
 
         <div class="main-content">
@@ -27,9 +25,20 @@ include "seguridad.php";
 
             <section class="dashboard">
                 <div class="tittle-div">
-                    <h1 class="title">Panel Administrativo</h1>
+                    <h1 class="title">Registrar Carrera</h1>
                 </div>
-                <img src="img/logo.jpg" alt="Panel Administrativo">
+
+                <div class="btn">
+                    <a class="btn-green" href="carreras.php">Regresar</a>
+                </div>
+
+                <div class="form-container">
+                <form action="guardar-carrera.php" method="post">
+                    <input class="input-login ancho-uniforme" type="text" id="nombre_carrera" name="nombre_carrera" placeholder="Nombre de la Carrera" required>
+                    <input class="btn-cuenta ancho-uniforme entrada-label" type="submit" value="Registrar">
+                </form>
+                </div>
+
             </section>
 
         </div>

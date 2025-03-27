@@ -1,16 +1,16 @@
 <div class="sidebar-content">
     <div class="logo">
         <a href="principal2.php">
-        <img src="img/Logo_del_Instituto_Tecnológico_de_Mérida.svg.png" alt="Logo">
+        <img src="img/logo1.jpg" alt="Logo">
         </a>
     </div>
-                <p class="font1">Usuario</p>
+    <p class="font1"> <?php echo $_SESSION["username"]; ?> </p>
                 <nav class="menu">
                     <ul>
-                        <li><a href="#">Opción 1</a></li>
-                        <li><a href="#">Opción 2</a></li>
-                        <li><a href="#">Opción 3</a></li>
-                        <li><a href="usuario.php">Usuarios</a></li>
+                        <li><a href="autores.php">Autores</a></li>
+                        <li><a href="carreras.php">Carreras</a></li>
+                        <li><a href="#">Libros</a></li>
+                        <li><a href="usuarios.php">Usuarios</a></li>
                     </ul>
                 </nav>
 </div>

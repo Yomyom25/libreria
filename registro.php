@@ -10,7 +10,7 @@
     <div class="div-1200px">
         <div class="img-logo">
             <a href="index.php">
-            <img class="logo" src="img/Logo_del_Instituto_Tecnológico_de_Mérida.svg.png" alt="Logo">
+            <img class="logo" src="img/logo.jpg" alt="Logo">
             </a>
         </div>
 

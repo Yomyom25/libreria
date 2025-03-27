@@ -17,7 +17,6 @@ include "seguridad.php";
             <?php
             include "utils/nav-bar.php"
             ?>
-
         </div>
 
         <div class="main-content">
@@ -27,56 +26,50 @@ include "seguridad.php";
 
             <section class="dashboard">
                 <div class="tittle-div">
-                    <h1 class="title">Usuarios</h1>
+                    <h1 class="title">Autores</h1>
                 </div>
 
                 <div class="btn">
-                    <a class="add-user" href="agregar-usuario.php">Crear Usuario</a>
+                    <a class="add-user" href="agregar-autor.php">Crear Autor</a>
                 </div>
 
-
-                <!-- Tabla de usuarios -->
+                <!-- Tabla de autores -->
                 <table class="tabla-usuarios">
                     <tr>
                         <th class="font-yellow">ID</th>
                         <th>Nombre</th>
-                        <th>Apellidos</th>
-                        <th>Correo</th>
+                        <th>País</th>
                         <th class="font-yellow">Ver</th>
                         <th class="font-yellow">Editar</th>
-                        <th class="font-yello">Borrar</th>
+                        <th class="font-yellow">Borrar</th>
                     </tr>
                     <?php
                     require "conn.php";
 
-                    $todos = "SELECT * FROM usuarios ORDER BY id ASC";
+                    $todos = "SELECT * FROM autores ORDER BY ID_autor ASC";
                     $resultado = mysqli_query($conectar, $todos);
                     while ($fila = $resultado->fetch_array()) {
                     ?>
                         <tr>
-                            <td><?php echo $fila["ID"] ?></td>
-                            <td><?php echo $fila["nombre"] ?></td>
-                            <td><?php echo $fila["apellido"] ?></td>
-                            <td><?php echo $fila["email"] ?></td>
-                            <td><a href="ver-usuario.php?id=<?php echo $fila["ID"]; ?>"><img class="img-tabla" src="img/see-icon.png" alt=""></a></td>
-                            <td><a href="editar-usuario.php?id=<?php echo $fila["ID"]; ?> "><img class="img-tabla" src="img/editar.png" alt=""></a></td>
-                            <td><a href="#" onClick="validarDelete('eliminar.php?id=<?php echo $fila["ID"]; ?>&tabla=usuarios')">
+                            <td><?php echo $fila["ID_autor"] ?></td>
+                            <td><?php echo $fila["nombre_autor"] ?></td>
+                            <td><?php echo $fila["pais_autor"] ?></td>
+                            <td><a href="ver-autor.php?id=<?php echo $fila["ID_autor"]; ?>"><img class="img-tabla" src="img/see-icon.png" alt=""></a></td>
+                            <td><a href="editar-autor.php?id=<?php echo $fila["ID_autor"]; ?> "><img class="img-tabla" src="img/editar.png" alt=""></a></td>
+                            <td><a href="#" onClick="validarDelete('eliminar.php?id=<?php echo $fila["ID_autor"]; ?>&tabla=autores')">
                                     <img class="img-tabla" src="img/eliminar.png" alt="">
                                 </a></td>
 
                         </tr>
                     <?php } ?>
-
                 </table>
-
             </section>
-
         </div>
     </div>
     <script>
-        // Funcion para validar el formulario de crear usuario
+        // Función para validar la eliminación de un autor
         function validarDelete(url) {
-            var mensaje = confirm("¿Está seguro de eliminar este usuario?");
+            var mensaje = confirm("¿Está seguro de eliminar este autor?");
             if (mensaje == true) {
                 window.location = url;
             }

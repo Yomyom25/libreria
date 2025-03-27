@@ -2,11 +2,11 @@
     --color1: #ccc;
     --colorWhite: #ffff;
     --colorBlack: #202131;
-    --color2: #7c2020;
+    --color2: #4A3259;
     --color3: #f2f4f6;
-    --color4: #f7831e;
-    --color5: #ffcc00;
-    --color6: #098839;
+    --color4: #D9526B;
+    --color5:#D98C5F;
+    --color6: #5F8286;
 }
 
 
@@ -43,7 +43,7 @@ body {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 200px;
     margin: auto;
     align-items: center;
 }
@@ -54,6 +54,7 @@ body {
 }
 
 .font1 {
+    color: var(--color4);
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
@@ -87,6 +88,7 @@ body {
 
 .menu a:hover {
     background: #ccc;
+    color: #D9526B;
 }
 
 .main-content {
@@ -188,6 +190,7 @@ body {
     cursor: pointer;
 }
 
+
 .btn {
     margin: 20px;
     text-align: left;
@@ -212,6 +215,11 @@ body {
     margin-bottom: 30px;
 }
 
+
+.btn-cuenta:hover, .btn-green:hover, .btn-blue:hover {
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+}
 
 .input-login {
     padding: 10px 20px;
