@@ -5,7 +5,7 @@ require "conn.php";
 $id = $_GET["id"];
 $tabla = $_GET["tabla"];
 
-$tablas_permitidas = ["usuarios", "autores", "carreras"];
+$tablas_permitidas = ["usuarios", "autores", "carreras", "libros"];
 
 if (!in_array($tabla, $tablas_permitidas)) {
     die("Operación no permitida");
@@ -14,7 +14,8 @@ if (!in_array($tabla, $tablas_permitidas)) {
 $columna_id = [
     "usuarios" => "ID",
     "autores" => "ID_autor",
-    "carreras" => "ID_carrera"
+    "carreras" => "ID_carrera",
+    "libros" => "ID_libro"
 ];
 
 $eliminar = "DELETE FROM $tabla WHERE {$columna_id[$tabla]} = '$id'";
