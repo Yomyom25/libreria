@@ -41,15 +41,26 @@ $fila = mysqli_fetch_array($resultado);
                 <div class="form-container">
                     <form action="guardar-editar_libro.php" method="post">
                         <input type="hidden" name="id" value="<?php echo $fila['ID_libro']; ?>">
+                        <input type="hidden" name="titulo" value="<?php echo $fila['titulo_libro']; ?>">
 
-                        <input class="input-login ancho-uniforme" type="text" name="titulo" value="<?php echo $fila['titulo_libro']; ?>" placeholder="Título del Libro" required>
+                        <!-- título del libro (solo visible) -->
+                        <div class="input-login correo">
+                            <?php echo $fila['titulo_libro'] ?>
+                        </div>
 
-                        <select name="autor" required class="input-login ancho-uniforme" >
+                        <!-- autores -->
+                        <select name="autor" required class="input-login ancho-uniforme">
                             <?php
-                            $autores = mysqli_query($conectar, "SELECT * FROM autores");
-                            while ($autor = mysqli_fetch_array($autores)) {
-                                $selected = ($autor['ID_autor'] == $fila['autor']) ? 'selected' : '';
-                                echo "<option value='{$autor['ID_autor']}' $selected>{$autor['nombre_autor']}</option>";
+                            $variable_autor = $fila["autor"];
+                            $verautor = "SELECT * FROM autores";
+                            $resultadoautor = mysqli_query($conectar, $verautor);
+                            while ($filautor = $resultadoautor->fetch_array()) {
+                                ?>
+                                <option value="<?php echo $filautor["ID_autor"]; ?>"
+                                    <?php if ($filautor["ID_autor"] == $variable_autor) echo "selected"; ?>>
+                                    <?php echo $filautor['nombre_autor'] ?>
+                                </option>
+                            <?php
                             }
                             ?>
                         </select>
@@ -58,12 +69,19 @@ $fila = mysqli_fetch_array($resultado);
 
                         <input class="input-login ancho-uniforme" type="text" name="editorial" value="<?php echo $fila['editorial']; ?>" placeholder="Editorial" required>
 
-                        <select name="carrera" required class="input-login ancho-uniforme" >
+                        <!-- carreras -->
+                        <select name="carrera" required class="input-login ancho-uniforme">
                             <?php
-                            $carreras = mysqli_query($conectar, "SELECT * FROM carreras");
-                            while ($carrera = mysqli_fetch_array($carreras)) {
-                                $selected = ($carrera['ID_carrera'] == $fila['carrera']) ? 'selected' : '';
-                                echo "<option value='{$carrera['ID_carrera']}' $selected>{$carrera['nombre_carrera']}</option>";
+                            $variable_carrera = $fila["carrera"];
+                            $vercarrera = "SELECT * FROM carreras";
+                            $resultadocarrera = mysqli_query($conectar, $vercarrera);
+                            while ($filcarrera = $resultadocarrera->fetch_array()) {
+                                ?>
+                                <option value="<?php echo $filcarrera["ID_carrera"]; ?>"
+                                    <?php if ($filcarrera["ID_carrera"] == $variable_carrera) echo "selected"; ?>>
+                                    <?php echo $filcarrera['nombre_carrera'] ?>
+                                </option>
+                            <?php
                             }
                             ?>
                         </select>
