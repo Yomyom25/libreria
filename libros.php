@@ -33,6 +33,7 @@ include "seguridad.php";
                 <div class="btn">
                     <a class="add-user" href="agregar-libro.php">Agregar Libro</a>
                     <a class="btn-green" href="libros.php">Todos los libros</a>
+                    <a class="add-user" href="reporte.php">Generar Reporte</a>
                 </div>
                 <!-- buscador -->
                 <div class="div-buscador">

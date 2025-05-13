@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $contrasena = "";
-$bd = "libreria";
+$bd = "libros";
 
 $conectar = mysqli_connect($host, $user, $contrasena, $bd);
 

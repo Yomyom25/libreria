@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-04-2025 a las 19:49:33
+-- Tiempo de generación: 07-05-2025 a las 20:58:23
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -40,7 +40,17 @@ CREATE TABLE `autores` (
 INSERT INTO `autores` (`ID_autor`, `nombre_autor`, `pais_autor`) VALUES
 (2, 'Mario', 'Mexico'),
 (3, 'Maria', 'Argentina'),
-(4, 'Alexa', 'Alemana');
+(4, 'Alexa', 'Alemana'),
+(5, 'Gabriel García Márquez	', 'Mexico'),
+(6, 'George Orwell	', 'Estados Unidos'),
+(7, 'Carlos Ruiz Zafón	', 'Mexico'),
+(8, 'Paulo Coelho	', 'España'),
+(9, 'F. Scott Fitzgerald', 'Estados Unidos'),
+(10, 'Yuval Noah Harari', 'Brazil'),
+(11, 'José Saramago	', 'Mexico'),
+(12, 'Patrick Rothfuss', 'Inglaterra'),
+(13, 'Isabel Allende	', 'Mexico'),
+(14, 'N. Gregory Mankiw	', 'Francia');
 
 -- --------------------------------------------------------
 
@@ -60,7 +70,12 @@ CREATE TABLE `carreras` (
 INSERT INTO `carreras` (`ID_carrera`, `nombre_carrera`) VALUES
 (1, 'Sistemas'),
 (2, 'Literatura'),
-(3, 'Ciencias Sociales');
+(3, 'Ciencias Sociales'),
+(4, 'Filosofía'),
+(5, 'Desarrollo personal'),
+(6, 'Historia'),
+(7, 'Literatura fantástica'),
+(8, 'Economía');
 
 -- --------------------------------------------------------
 
@@ -82,8 +97,12 @@ CREATE TABLE `libros` (
 --
 
 INSERT INTO `libros` (`ID_libro`, `titulo_libro`, `autor`, `anio`, `editorial`, `carrera`) VALUES
-(1, 'Algoritmos básicos', 2, '2002', 'Santillana', 1),
-(3, 'Cien años de soledad', 3, '1998', 'MundoLibro', 2);
+(3, 'Cien años de soledad', 3, '1998', 'MundoLibro', 2),
+(4, '1984', 6, '1949', 'Secker & Warburg', 4),
+(5, 'La sombra del viento	', 7, '2001', 'Planeta', 2),
+(6, 'El alquimista	', 8, '1988', 'HarperCollins', 3),
+(7, 'El gran Gatsby', 9, '1925', 'Charles Scribner Sons', 2),
+(8, 'Sapiens: De animales a dioses', 10, '2011', 'Editorial Debate', 6);
 
 -- --------------------------------------------------------
 
@@ -147,19 +166,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `autores`
 --
 ALTER TABLE `autores`
-  MODIFY `ID_autor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID_autor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `carreras`
 --
 ALTER TABLE `carreras`
-  MODIFY `ID_carrera` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_carrera` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `libros`
 --
 ALTER TABLE `libros`
-  MODIFY `ID_libro` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_libro` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
