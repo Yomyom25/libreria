@@ -32,6 +32,12 @@ include "seguridad.php";
                     <a class="btn-green" href="autores.php">Regresar</a>
                 </div>
 
+                <div class="btn">
+                    <a class="btn-green" href="crear_autore.php">Crear Autor</a>
+                </div>
+
+
+
                 <div class="form-container">
                 <form action="guardar-autor.php" method="post">
                     <input class="input-login ancho-uniforme" type="text" id="nombre_autor" name="nombre_autor" placeholder="Nombre del Autor" required>

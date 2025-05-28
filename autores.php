@@ -32,7 +32,12 @@ include "seguridad.php";
                 <div class="btn">
                     <a class="add-user" href="agregar-autor.php">Crear Autor</a>
                 </div>
-
+                
+                <div class="btn">
+                    <a class="btn-green" href="json_autores.php">Generar JSON</a>
+                    <a class="add-user" href="datos_autor.json">Ver datos</a>
+                </div>
+                
                 <!-- Tabla de autores -->
                 <table class="tabla-usuarios">
                     <tr>

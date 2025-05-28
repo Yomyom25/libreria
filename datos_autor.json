@@ -1,0 +1,67 @@
+[
+    {
+        "ID_autor": "2",
+        "nombre_autor": "Mario",
+        "pais_autor": "Mexico"
+    },
+    {
+        "ID_autor": "3",
+        "nombre_autor": "Maria",
+        "pais_autor": "Argentina"
+    },
+    {
+        "ID_autor": "4",
+        "nombre_autor": "Alexa",
+        "pais_autor": "Alemana"
+    },
+    {
+        "ID_autor": "5",
+        "nombre_autor": "Gabriel García Márquez\t",
+        "pais_autor": "Mexico"
+    },
+    {
+        "ID_autor": "6",
+        "nombre_autor": "George Orwell\t",
+        "pais_autor": "Estados Unidos"
+    },
+    {
+        "ID_autor": "7",
+        "nombre_autor": "Carlos Ruiz Zafón\t",
+        "pais_autor": "Mexico"
+    },
+    {
+        "ID_autor": "8",
+        "nombre_autor": "Paulo Coelho\t",
+        "pais_autor": "España"
+    },
+    {
+        "ID_autor": "9",
+        "nombre_autor": "F. Scott Fitzgerald",
+        "pais_autor": "Estados Unidos"
+    },
+    {
+        "ID_autor": "10",
+        "nombre_autor": "Yuval Noah Harari",
+        "pais_autor": "Brazil"
+    },
+    {
+        "ID_autor": "11",
+        "nombre_autor": "José Saramago\t",
+        "pais_autor": "Mexico"
+    },
+    {
+        "ID_autor": "12",
+        "nombre_autor": "Patrick Rothfuss",
+        "pais_autor": "Inglaterra"
+    },
+    {
+        "ID_autor": "13",
+        "nombre_autor": "Isabel Allende\t",
+        "pais_autor": "Mexico"
+    },
+    {
+        "ID_autor": "14",
+        "nombre_autor": "N. Gregory Mankiw\t",
+        "pais_autor": "Francia"
+    }
+]
